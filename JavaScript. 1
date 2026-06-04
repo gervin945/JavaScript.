@@ -1,0 +1,44 @@
+// 1. Оголошення змінних різних типів
+let integerNumber = 10;
+let floatNumber = 3.14;
+let text = "JavaScript";
+let isActive = true;
+
+console.log(integerNumber, typeof integerNumber);
+console.log(floatNumber, typeof floatNumber);
+console.log(text, typeof text);
+console.log(isActive, typeof isActive);
+
+// 2. Зміна значень
+integerNumber = "100";
+floatNumber = false;
+text = 500;
+isActive = null;
+
+console.log(integerNumber, typeof integerNumber);
+console.log(floatNumber, typeof floatNumber);
+console.log(text, typeof text);
+console.log(isActive, typeof isActive);
+
+// 3. Перетворення типів
+let concatResult = 25 + "5";
+console.log("25 + '5' =", concatResult, typeof concatResult);
+
+let trueToNumber = Number(true);
+let falseToNumber = Number(false);
+
+console.log("true ->", trueToNumber);
+console.log("false ->", falseToNumber);
+
+let stringToNumber = Number("123");
+console.log(stringToNumber, typeof stringToNumber);
+
+// 4. Об'єкт із різними типами даних
+const student = {
+    name: "Іван",
+    age: 18,
+    averageMark: 10.5,
+    isStudent: true
+};
+
+console.log(JSON.stringify(student, null, 2));
